@@ -1,3 +1,3 @@
 export default function fetchProducts() {
-  fetch('https://fakestoreapi.com/products').then(res => res.json());
+  return fetch('https://fakestoreapi.com/products').then(res => res.json());
 }

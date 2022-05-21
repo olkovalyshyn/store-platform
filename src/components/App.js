@@ -1,20 +1,34 @@
 import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import ProductCards from './productCard';
 import fetchProducts from '../api';
+import Navigation from './navigation/navigation';
+import Product from './product/product';
+import Cart from './cart/cart';
+import User from './user/user';
 
 function App() {
   const [arrProducts, setArrProducts] = useState();
 
-  useEffect(async () => {
-    await fetch('https://fakestoreapi.com/products')
-      .then(res => res.json())
-      .then(data => setArrProducts(data));
+  useEffect(() => {
+    fetchProducts().then(res => setArrProducts(res));
   }, []);
 
   return (
     <div>
-      <ProductCards api={arrProducts} />
+      <Routes>
+        <Route path="/" element={<Navigation />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="user" element={<User />} />
+        <Route
+          path="product"
+          element={arrProducts && <Product api={arrProducts} />}
+        />
+        {/* 
+        <Cart />
+        <User />
+        {arrProducts && <Product api={arrProducts} />} */}
+      </Routes>
     </div>
   );
 }

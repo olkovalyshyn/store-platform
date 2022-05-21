@@ -1,0 +1,17 @@
+/* li {
+    
+} */
+
+.card{
+width: 400px;
+
+    outline: 2px solid red;
+    list-style: none;
+}
+
+.flex_elements{
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: teal;
+}
