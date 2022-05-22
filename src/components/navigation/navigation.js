@@ -1,18 +1,15 @@
 import { NavLink } from 'react-router-dom';
+import s from '../navigation/navigation.module.css';
 
 export default function Navigation() {
   return (
-    <ul>
-      <li>
-        <NavLink to="/product">Product</NavLink>
-      </li>
-      <li>
-        <NavLink to="/cart">Cart</NavLink>
-      </li>
-
-      <li>
-        <NavLink to="/user">User</NavLink>
-      </li>
-    </ul>
+    <div className={s.nav}>
+      <NavLink to="/product" className={s.link}>
+        Products
+      </NavLink>
+      <NavLink to="/user" className={s.link}>
+        Users
+      </NavLink>
+    </div>
   );
 }

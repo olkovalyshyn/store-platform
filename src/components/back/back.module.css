@@ -1,0 +1,17 @@
+.link{
+    background-color: rgb(247, 255, 94);
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.nav {
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+}

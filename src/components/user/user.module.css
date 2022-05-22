@@ -1,0 +1,18 @@
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userCard{
+    margin-top: 20px;
+    list-style-type: none;
+    background-color: rgb(220, 212, 212);
+    border: 2px solid rgb(0, 151, 0);
+
+    text-align: center;
+    font-size: 20px;
+}
+

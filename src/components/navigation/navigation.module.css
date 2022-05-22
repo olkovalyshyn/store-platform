@@ -1,0 +1,27 @@
+.link{
+    display: block;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.link + .link{
+    margin-top: 50px;
+}
+
+.nav{
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 400px;
+
+}
